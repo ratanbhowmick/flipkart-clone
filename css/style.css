@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* making the utility styles for common attributes and classes */
+
+body{
+    font-family: Roboto, Arial, sans-serif;
+    text-decoration: none;
+    min-height: 140vh;
+    background: #f1f3f6;
+    line-height: 1.4;
+    letter-spacing: 0;
+
+}
+.none{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+.fa{
+    margin: 3px 4px;
+}
+.fa-angle-down{
+    font-weight: lighter;
+    margin: 0;
+}
+.fa-user{
+    border-radius:50%;
+}
+
+/* Style the navigation and heading */
+
+.heading_navigation{
+    background-color: #2874f0;
+    height: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.nav_container{
+    align-items: center;
+    max-width: 1248px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 61px;
+}
+
+.logo{
+    flex-direction: column;
+    width: fit-content;
+
+}
+.anchor{
+   cursor: pointer; 
+   text-decoration: none;
+   color: whitesmoke;
+
+}
+.flip_logo img{
+    width: 75px;
+}
+.anchor:hover{
+    text-decoration: underline;
+
+}
+
+.anchor{
+    font-size: 10px;
+    font-style: italic;
+    margin-top: -5px;
+
+}
+.plus img{
+    width: 10px;
+
+}
+.plus_lan{
+    color: #ffe500;
+    margin: 0px 2px;
+    font-weight: bold;
+}
+.search_bar_container{
+    min-width: 304px;
+    width: 708px;
+}
+.search_bar{
+    max-width: 564px;
+    width: 100%;
+    margin-left: 10px;
+    box-shadow: 0px 2px 4px 0 rgb(0 0 0 /23%);
+}
+.search_box{
+    outline: none;
+    padding: 0px 16px;
+    height: 36px;
+    border-radius: 2px 0px 0px 2px ;
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+}
+.btn_search{
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 4px 12px 4px 8px;
+    width: 44px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 0px 2px 2px 0px;
+    color: #2874f0;
+    font-size: 19px;
+}
+
+.login{
+    position: relative;
+    left: -64px;
+
+}
+
+.login_btn{
+    color: #2874f0;
+    border-radius: 2px;
+    border:1px solid #dbdbdb ;
+    background: #fff;
+    letter-spacing: .1px;
+    height: 32px;
+    padding: 6px 40px;
+    font-weight: bold;
+    margin:0px 20px ;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.seller{
+    position: relative;
+    left: -55px; 
+}
+.seller_btn{
+    color: white;
+    font-weight: bold;
+    margin: 0px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.more , .cart{
+    position: relative;
+    left: -46px;
+
+}
+.more_lan , .cart_lan{
+    color: white;
+    font-weight: bold;
+    margin: 0px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.heading_catagories{
+    background: #fff;
+    justify-content:center ;
+    min-height:112px ;
+    border-bottom: 2px solid lightgray;
+    box-shadow: 0 1px 1px 0 rgba(169, 164, 164, 0.16);
+}
+
+.heading_category_list{
+    list-style: none;
+    max-width: 1280px;
+    justify-content: space-between;
+    width: 100%;
+    /* margin: auto; */
+}
+
+.heading_category_items{
+    padding: 12px 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.heading_category_items:hover{
+    color: #2874f0;
+}
+
+.cat_image{
+   height: 64px; 
+   width: 64px;
+   margin-bottom:3px ;
+}
+
+.heading_item_name{
+    font-size: 14px;
+    font-weight: 505;
+
+}
+.heading_category_items:first-child{
+    padding-left: 22px;
+
+}
+.heading_category_items:last-child{
+    padding-right: 22px;
+}
+
+/* styling the dropdown menu */
+.pointer{
+width:20px ;
+height: 20px;
+background:#fff ;
+transform: rotate(45deg);
+position: relative;
+top: 10px;
+left: 50%;
+
+}
+
+.login_dropdown , .more_dropdown{
+    position: relative;
+    top: 12px;
+
+}
+.more_dropdown{
+    right: 40px;
+
+}
+.login_dropdown_list, .more_dropdown_list{
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    width: max-content;
+    box-shadow: 0 4px 16px 0 rgb(0, 0, 0/20%);
+    min-width: 240px;
+    transform: translate(-30px);
+
+}
+.login_drop_li, .more_drop_li{
+    padding: 16px 20px;
+    border-bottom:1px solid #f0f0f0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login_drop_li:last-child, .more_drop_li:last-child{
+    border-bottom: none;
+
+}
+.login_drop_li:first-child{
+    padding: 20px;
+
+}
+.login_drop_li:first-child:hover{
+    background: #fff;
+}
+.login_drop_li:hover ,.more_drop_li:hover{
+    background: #fafafa;
+}
+.new_login{
+    font-weight: bold;
+}
+
+.sign_li{
+   justify-content: space-between;
+   font-size: 14px;
+
+}
+.sign_up{
+    text-decoration: none;
+    color: #2874f0;
+}
+.more:hover .more_lan{
+    position: relative;
+    top: 10px;
+
+}
+.more_pointer{
+    left: 80%;
+}
+
+.more_icon{
+    width: 25px;
+    color: #2874f0;
+}
+
+.login:hover .login_dropdown , .more:hover .more_dropdown{
+    display: block;
+}
+
+.nav_button{
+    position: absolute;
+}
+
+.corousel_btn{
+    position: relative;
+    border-radius: 0px 4px 4px 0px;
+    font-size: 40px;
+    background: hsla(0, 0%, 100%, .98);
+    width: 48px;
+    height: 104px;
+    align-items: center;
+    justify-content:center ;
+    box-shadow: 0 1px 5px 0 rgba(239, 237, 237, 0.11);
+    cursor: pointer;
+    top: 90px;
+}
+.prev_btn{
+   left: 0; 
+   margin-left: 8px;
+
+}
+.next_prev{
+   font-weight: bold;
+
+}
+.corousel_2{
+    border-radius: 4px 0px 0px 4px;
+}
+
+.next_btn{
+    right: 0;
+    margin-right: 8px;
+
+}
+.corousel_item_container{
+    margin: auto;
+    max-width:1608px ;
+    min-width: 978px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.corouesl_items , .corousel_image{
+ top: 0;
+ bottom: 0;
+ right: 0;
+ max-width: 100%;
+ min-height: 100%;
+ transition: opacity .5s linear;
+
+}
+.raki{
+    display: block;
+}
+
+.gift{
+    width: 100%;
+
+}
+
+.box2{
+    border-top: 1px solid #eaeaea;
+    height: 100%;
+}
+.box1{
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+}
+
+.box3 .box2{
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.box2 .box3 .box4{
+    font-size: 22px;
+    line-height: 32px;
+    display: inline-block;
+    font-weight: 500;
+}
+.box2 .box3 .box5{
+    float: right;
+}
+
+.box6.box7{
+    background: #2874f0;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border: none;
+}
+.box6{
+    display: inline-block;
+    border-radius: 2px;
+    /* color: #212121; */
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: box-shadow .2s ease;
+    vertical-align: super;
+    /* background: #fff; */
+    cursor: pointer;
+    outline: none;
+}
